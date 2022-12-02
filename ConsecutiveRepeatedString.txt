@@ -1,0 +1,26 @@
+
+public class Demo {
+
+	public static String str(String input) {
+        if(input.length()<=1)
+            return input;
+        if(input.charAt(0)==input.charAt(1))
+            return str(input.substring(1));
+        else
+            return input.charAt(0) + str(input.substring(1));
+    }
+    public static void main(String[] args)
+    {
+//        String S1 = "AABBCCDD";
+//        System.out.println(str(S1));
+//   
+//        String S2 = "AAAABBBBCCCCDDDD";
+//        System.out.println(str(S2));
+//        
+        
+        String S3 = "aaabccffddcdaabs";
+        System.out.println(str(S3));
+    }
+	
+}
+
